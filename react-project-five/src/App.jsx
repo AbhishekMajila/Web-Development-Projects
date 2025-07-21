@@ -1,0 +1,21 @@
+import Card from "./components/card"
+import './App.css'
+import { useState } from "react"
+
+function App() {
+//  change
+//  create 
+// manage
+const[name,setName]=useState('');
+  return (
+    <div>
+      <Card  title ="card1" name={name} setName={setName} />
+      <Card title = "card2" name={name} setName={setName} />
+      {/* <p>I am inside parent component and value of name is :{name}</p>
+        */}
+    </div>
+      
+  )
+}
+
+export default App
